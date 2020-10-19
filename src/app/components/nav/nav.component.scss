@@ -1,10 +1,12 @@
 
 .title{
     font-family: 'Krona One';
+    cursor: default;
   }
   
   .slider{
     font-family: 'Krona One';
+    cursor: crosshair;
   }
   .items {
       margin: 0;
@@ -22,4 +24,5 @@
       position: fixed;
       bottom: 50px;
       padding: 12px;
+      cursor: default;
     }

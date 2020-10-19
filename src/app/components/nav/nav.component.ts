@@ -26,13 +26,16 @@ const listAnimation = trigger('listAnimation', [
   styleUrls: ['./nav.component.scss'],
   animations: [listAnimation]
 })
-export class NavComponent{
+export class NavComponent implements OnInit{
 
   titulo: string = ""
   elementos: Array<string> = []
   seleccionado: boolean = false
   elementoSel: string = ""
   backTo: string = "Back To Index"
+
+  ngOnInit(){
+  }
 
   constructor() { 
     this.titulo = 'Adrizzy on Film'
