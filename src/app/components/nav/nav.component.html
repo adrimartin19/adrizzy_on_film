@@ -1,0 +1,26 @@
+<div class = "title">
+    <h1>{{ titulo }}</h1>
+</div>
+
+<div class = "slider">
+    <h2><a (click) ="navList()">Photo</a> / <a>Info</a></h2>
+
+    <ul style="list-style-type: none;"
+        [@listAnimation]="elementos.length" class = "items">
+        <li *ngFor="let elemento of elementos" class = "item">
+            <a (click)="setSeleccionado(elemento)">{{ elemento }}</a>
+        </li>
+    </ul>
+</div>
+
+<div class = "info"></div>
+
+<div class = "footer">
+    <h2  
+        (mouseover) = "backTo = 'Back To Index'"
+        (mouseleave) = "backTo = elementoSel"
+        (click) = "seleccionado = false"
+        *ngIf="isSeleccionado()">
+        {{ backTo }}
+    </h2>
+</div>

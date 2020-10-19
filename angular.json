@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AdrizzyOnFilm"
+    }
+  },
+  "defaultProject": "AdrizzyOnFilm",
+  "cli": {
+    "analytics": false
+  }
 }
