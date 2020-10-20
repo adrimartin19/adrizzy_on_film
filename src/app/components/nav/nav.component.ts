@@ -47,13 +47,18 @@ export class NavComponent implements OnInit{
 
   navList(){
     this.elementos = this.elementos.length ? [] : ['Carrete 1', 'Verano', 'Carrete 2'];
+    if(!this.showList ) document.getElementById("selectPhoto").style.textDecoration = "underline solid 5px"
+    else document.getElementById("selectPhoto").style.textDecoration = ""
     this.showList = !this.showList
+    
+    
   }
 
   showSlider(tipo: string){
     if(tipo == 'photo'){
       this.navList()
       if(this.isShowInfo()) this.info()
+
     }
 
     if(tipo == 'info'){
@@ -63,7 +68,10 @@ export class NavComponent implements OnInit{
   }
 
   info(){
+    if(!this.showInfo) document.getElementById("selectInfo").style.textDecoration = "underline solid 5px"
+    else document.getElementById("selectInfo").style.textDecoration = ""
     this.showInfo = !this.showInfo
+    
   }
 
   isShowInfo(){
