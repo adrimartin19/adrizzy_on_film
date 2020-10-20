@@ -9,7 +9,8 @@
     <ul style="list-style-type: none;"
         [@listAnimation]="elementos.length" class = "items">
         <li *ngFor="let elemento of elementos" class = "item">
-            <a (click)="setSeleccionado(elemento)">{{ elemento }}</a>
+            <a class="linkNav" (click)="setSeleccionado(elemento)"
+                routerLink={{elemento.LinkRoute}}>{{ elemento.Name }}</a>
         </li>
     </ul>
 </div>
@@ -18,7 +19,7 @@
     @fadeAnimation *ngIf="isShowInfo()">
     <br>
     <h2> Adrian Martin Jaimez</h2>
-    <h3> Age: 25 <br> Granada, Spain</h3>
+    <h3> Granada, Spain</h3>
     <br>
     <h3 onclick="window.open('https://www.instagram.com/_adrimartin/');"> Instagram</h3>
     <h3 onclick="window.open('https://twitter.com/_adrimartin');"> Twitter</h3>
@@ -29,6 +30,7 @@
     <h2  
         (mouseover) = "backTo = 'Back To Index'"
         (mouseleave) = "backTo = elementoSel"
+        routerLink='/'
         (click) = "seleccionado = false"
         *ngIf="isSeleccionado()">
         {{ backTo }}

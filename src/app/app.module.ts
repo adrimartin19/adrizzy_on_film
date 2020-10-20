@@ -5,6 +5,18 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
+import { RouterModule, Routes } from '@angular/router';
+import { Carrete1Component } from './components/carrete1/carrete1.component';
+
+
+const routes: Routes = [
+ 
+  {
+    path: 'carrete1',
+    component: Carrete1Component
+  }
+
+]
 
 @NgModule({
   declarations: [
@@ -14,7 +26,8 @@ import { NavComponent } from './components/nav/nav.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule 
+    BrowserAnimationsModule,
+    RouterModule.forRoot(routes, {useHash: true})
   ],
   providers: [],
   bootstrap: [AppComponent]

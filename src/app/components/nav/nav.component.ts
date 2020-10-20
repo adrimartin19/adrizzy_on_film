@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Elemento } from 'src/app/interfaces/elemento';
 import {  animate,
   query,
   stagger,
@@ -28,10 +29,11 @@ const listAnimation = trigger('listAnimation', [
   styleUrls: ['./nav.component.scss'],
   animations: [listAnimation, fadeAnimation]
 })
+
 export class NavComponent implements OnInit{
 
   titulo: string = ""
-  elementos: Array<string> = []
+  elementos: Array<Elemento> = []
   seleccionado: boolean = false
   elementoSel: string = ""
   backTo: string = "Back To Index"
@@ -46,7 +48,7 @@ export class NavComponent implements OnInit{
   }
 
   navList(){
-    this.elementos = this.elementos.length ? [] : ['Carrete 1', 'Verano', 'Carrete 2'];
+    this.elementos = this.elementos.length ? [] : [{Name: "Carrete 1", LinkRoute: "carrete1"}];
     if(!this.showList ) document.getElementById("selectPhoto").style.textDecoration = "underline solid 5px"
     else document.getElementById("selectPhoto").style.textDecoration = ""
     this.showList = !this.showList
@@ -82,9 +84,9 @@ export class NavComponent implements OnInit{
     return this.showList
   }
 
-  setSeleccionado(sel){
-    this.elementoSel = sel;
-    this.backTo = sel;
+  setSeleccionado(sel:Elemento){
+    this.elementoSel = sel.Name;
+    this.backTo = sel.Name;
     this.seleccionado = true;
   }
 
