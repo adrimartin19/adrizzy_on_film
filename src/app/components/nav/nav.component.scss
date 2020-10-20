@@ -1,5 +1,5 @@
 
-.title{
+  .title{
     font-family: 'Krona One';
     cursor: default;
   }
@@ -8,21 +8,27 @@
     font-family: 'Krona One';
     cursor: crosshair;
   }
+
+  .info{
+    font-family: 'Krona One';
+    cursor: default;
+  }
+
   .items {
-      margin: 0;
-      padding: 0;
-    }
+    margin: 0;
+    padding: 0;
+  }
     
-    .item {
-      font-family: 'Krona One';
-      padding: 12px;
-      border-bottom: 0;
-    }
+  .item {
+    font-family: 'Krona One';
+    padding: 12px;
+    border-bottom: 0;
+  }
   
-    .footer{
-      font-family: 'Krona One';
-      position: fixed;
-      bottom: 50px;
-      padding: 12px;
-      cursor: default;
-    }
+  .footer{
+    font-family: 'Krona One';
+    position: fixed;
+    bottom: 50px;
+    padding: 12px;
+    cursor: default;
+  }

@@ -7,15 +7,17 @@ import {  animate,
   trigger 
 } from '@angular/animations';
 
+export const fadeAnimation = trigger('fadeAnimation', [
+  transition(':enter', [
+    style({ opacity: 0 }), animate('300ms', style({ opacity: 1 }))]
+  )
+]);
+
 const listAnimation = trigger('listAnimation', [
   transition('* <=> *', [
     query(':enter',
       [style({ opacity: 0 }), stagger('60ms', animate('600ms ease-out', style({ opacity: 1 })))],
       { optional: true }
-    ),
-    query(':leave',
-      animate('200ms', style({ opacity: 0 })),
-      { optional: true}
     )
   ])
 ]);
@@ -24,7 +26,7 @@ const listAnimation = trigger('listAnimation', [
   selector: 'app-nav',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.scss'],
-  animations: [listAnimation]
+  animations: [listAnimation, fadeAnimation]
 })
 export class NavComponent implements OnInit{
 
@@ -33,6 +35,8 @@ export class NavComponent implements OnInit{
   seleccionado: boolean = false
   elementoSel: string = ""
   backTo: string = "Back To Index"
+  showInfo: boolean = false
+  showList: boolean = false
 
   ngOnInit(){
   }
@@ -43,8 +47,32 @@ export class NavComponent implements OnInit{
 
   navList(){
     this.elementos = this.elementos.length ? [] : ['Carrete 1', 'Verano', 'Carrete 2'];
+    this.showList = !this.showList
   }
 
+  showSlider(tipo: string){
+    if(tipo == 'photo'){
+      this.navList()
+      if(this.isShowInfo()) this.info()
+    }
+
+    if(tipo == 'info'){
+      this.info()
+      if(this.isShowList()) this.navList();
+    }
+  }
+
+  info(){
+    this.showInfo = !this.showInfo
+  }
+
+  isShowInfo(){
+    return this.showInfo
+  }
+
+  isShowList(){
+    return this.showList
+  }
 
   setSeleccionado(sel){
     this.elementoSel = sel;
