@@ -5,3 +5,15 @@
     padding: 12px;
     cursor: default;
   }
+
+  .album{
+    position: absolute;
+    flex-direction: row;
+    width: max-content;
+    height: 100%;
+    z-index: -1;
+  }
+
+  img{
+    height: 100%;
+  }

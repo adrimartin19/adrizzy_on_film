@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
 import { RouterModule, Routes } from '@angular/router';
 import { Carrete1Component } from './components/carrete1/carrete1.component';
+import { MatGridListModule } from '@angular/material/grid-list';  
 
 
 const routes: Routes = [
@@ -28,6 +29,7 @@ const routes: Routes = [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatGridListModule,
     RouterModule.forRoot(routes, {useHash: true})
   ],
   providers: [],

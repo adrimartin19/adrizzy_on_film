@@ -1,8 +1,10 @@
-<img src="./assets/img/Carrete1_1.png">
-<img src="./assets/img/Carrete1_2.png">
+<div class="album" @fadeAnimation>
+    <img *ngFor="let imagen of imagenes" src={{imagen.Url}}>
+</div>
 
 
-  <div class = "footer">
+
+<div class = "footer">
     <h2
         routerLink = "/"
         (mouseover) = "backTo = 'Back To Index'"

@@ -8,12 +8,6 @@ import {  animate,
   trigger 
 } from '@angular/animations';
 
-export const fadeAnimation = trigger('fadeAnimation', [
-  transition(':enter', [
-    style({ opacity: 0 }), animate('300ms', style({ opacity: 1 }))]
-  )
-]);
-
 const listAnimation = trigger('listAnimation', [
   transition('* <=> *', [
     query(':enter',
@@ -22,6 +16,14 @@ const listAnimation = trigger('listAnimation', [
     )
   ])
 ]);
+
+export const fadeAnimation = trigger('fadeAnimation', [
+  transition(':enter', [
+    style({ opacity: 0 }), animate('300ms', style({ opacity: 1 }))]
+  )
+]);
+
+
 
 @Component({
   selector: 'app-nav',
