@@ -9,7 +9,7 @@
     <ul style="list-style-type: none;"
         [@listAnimation]="elementos.length" class = "items">
         <li *ngFor="let elemento of elementos" class = "item">
-            <a class="linkNav" (click)="setSeleccionado(elemento)"
+            <a class="linkNav"
                 routerLink={{elemento.LinkRoute}}>{{ elemento.Name }}</a>
         </li>
     </ul>
@@ -26,13 +26,3 @@
 
 </div>
 
-<div class = "footer">
-    <h2  
-        (mouseover) = "backTo = 'Back To Index'"
-        (mouseleave) = "backTo = elementoSel"
-        routerLink='/'
-        (click) = "seleccionado = false"
-        *ngIf="isSeleccionado()">
-        {{ backTo }}
-    </h2>
-</div>

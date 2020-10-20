@@ -34,9 +34,6 @@ export class NavComponent implements OnInit{
 
   titulo: string = ""
   elementos: Array<Elemento> = []
-  seleccionado: boolean = false
-  elementoSel: string = ""
-  backTo: string = "Back To Index"
   showInfo: boolean = false
   showList: boolean = false
 
@@ -82,16 +79,6 @@ export class NavComponent implements OnInit{
 
   isShowList(){
     return this.showList
-  }
-
-  setSeleccionado(sel:Elemento){
-    this.elementoSel = sel.Name;
-    this.backTo = sel.Name;
-    this.seleccionado = true;
-  }
-
-  isSeleccionado(){
-    return this.seleccionado;
   }
 
 }

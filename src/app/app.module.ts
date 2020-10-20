@@ -10,7 +10,7 @@ import { Carrete1Component } from './components/carrete1/carrete1.component';
 
 
 const routes: Routes = [
- 
+  
   {
     path: 'carrete1',
     component: Carrete1Component
@@ -21,7 +21,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent
+    NavComponent,
+    Carrete1Component
   ],
   imports: [
     BrowserModule,
