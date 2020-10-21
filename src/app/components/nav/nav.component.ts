@@ -47,7 +47,7 @@ export class NavComponent implements OnInit{
   }
 
   navList(){
-    this.elementos = this.elementos.length ? [] : [{Name: "Carrete 1", LinkRoute: "carrete1"}];
+    this.elementos = this.elementos.length ? [] : [{Name: "Carrete 1", LinkRoute: "carrete1"}, {Name: "Verano", LinkRoute: "/"},  {Name: "Carrete 2", LinkRoute: "/"}];
     if(!this.showList ) document.getElementById("selectPhoto").style.textDecoration = "underline solid 5px"
     else document.getElementById("selectPhoto").style.textDecoration = ""
     this.showList = !this.showList
