@@ -51,15 +51,12 @@ export class NavComponent implements OnInit{
     if(!this.showList ) document.getElementById("selectPhoto").style.textDecoration = "underline solid 5px"
     else document.getElementById("selectPhoto").style.textDecoration = ""
     this.showList = !this.showList
-    
-    
   }
 
   showSlider(tipo: string){
     if(tipo == 'photo'){
       this.navList()
       if(this.isShowInfo()) this.info()
-
     }
 
     if(tipo == 'info'){

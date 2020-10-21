@@ -5,7 +5,6 @@
 <div class = "slider">
     <h1 id="textSelect"><a id="selectPhoto" (click) ="showSlider('photo')">Photo</a> / 
         <a id="selectInfo" (click)="showSlider('info')">Info</a></h1>
-
     <ul style="list-style-type: none;"
         [@listAnimation]="elementos.length" class = "items">
         <li *ngFor="let elemento of elementos" class = "item">

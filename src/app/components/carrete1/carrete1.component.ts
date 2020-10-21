@@ -11,6 +11,9 @@ import {  animate,
 export const fadeAnimation = trigger('fadeAnimation', [
   transition(':enter', [
     style({ opacity: 0 }), animate('750ms', style({ opacity: 1 }))]
+  ),
+  transition(':leave',
+    [style({ opacity: 1 }), animate('300ms', style({ opacity: 0 }))]
   )
 ]);
 
@@ -37,10 +40,10 @@ export class Carrete1Component implements OnInit {
       },
       {
         Url: "./assets/img/Carrete1_3.png"
-      }/*,
+      },
       {
         Url: "./assets/img/Carrete1_2.png"
-      }*/
+      }
     ]
 
    }
@@ -49,16 +52,7 @@ export class Carrete1Component implements OnInit {
   }
 
   moverAlbum(num): void{
-    
-    var tamAlbum = (1.52*document.getElementById("album").offsetHeight)*this.imagenes.length
-    var limit = tamAlbum - this.panelAlbum.nativeElement.scrollLeft
-
-    console.log(num.deltaY*3.33)
-    if(window.innerWidth  + num.deltaY*3.33 <= limit )
-      this.panelAlbum.nativeElement.scrollLeft += num.deltaY*3.33
-    else
-      this.panelAlbum.nativeElement.scrollLeft = tamAlbum - window.innerWidth
-
+    this.panelAlbum.nativeElement.scrollLeft += num.deltaY*10;
   }
 
   
