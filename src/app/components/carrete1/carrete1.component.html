@@ -1,6 +1,12 @@
-<div class="album" @fadeAnimation>
-    <img *ngFor="let imagen of imagenes" src={{imagen.Url}}>
+
+
+<div #panelAlbum class="panelAlbum">
+    <div id="album" class="album" (wheel)="moverAlbum($event)"
+    @fadeAnimation>
+       <img *ngFor="let imagen of imagenes" src={{imagen.Url}}>
+   </div>
 </div>
+
 
 
 

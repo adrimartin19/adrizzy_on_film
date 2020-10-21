@@ -1,17 +1,29 @@
+:root{
+  background-color: black;
+}
 .footer{
     font-family: 'Krona One';
     position: fixed;
-    bottom: 50px;
-    padding: 12px;
+    bottom: 40px;
+    padding: 20px;
     cursor: default;
   }
 
-  .album{
+  .panelAlbum{
     position: absolute;
-    flex-direction: row;
-    width: max-content;
-    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-x: scroll;
+    overflow-x: hidden;
+    background-color: black;
     z-index: -1;
+  }
+  .album{
+    float: left;
+    width: max-content;
+    height: 99.5%;
   }
 
   img{
