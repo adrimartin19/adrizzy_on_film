@@ -28,9 +28,7 @@ export class Carrete1Component implements OnInit {
 
   
   @ViewChild('panelAlbum', { read: ElementRef }) public panelAlbum: ElementRef<any>;
-  
-  backTo: string = "Carrete 1"
-  idPage: string = "Carrete 1"
+
   imagenes: Array<Image> = []
 
   constructor() {
@@ -54,9 +52,5 @@ export class Carrete1Component implements OnInit {
   moverAlbum(num): void{
     this.panelAlbum.nativeElement.scrollLeft += num.deltaY*10;
   }
-
-  
-
-  
 
 }

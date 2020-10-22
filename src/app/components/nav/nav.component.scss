@@ -1,10 +1,13 @@
 
-  .title{
-    cursor: default;
+  .title{  
+    cursor: pointer;
   }
 
-  a{
-    cursor: crosshair;
+   .slider a{
+    cursor: pointer;
+  }
+  .slider a:hover {
+    text-decoration: underline solid 3px;
   }
 
   .info{
@@ -24,4 +27,12 @@
   .item {
     padding: 12px;
     border-bottom: 0;
+  }
+
+  
+.footer{
+  position: fixed;
+  bottom: 40px;
+  padding: 20px;
+  cursor: pointer;
   }

@@ -38,6 +38,8 @@ export class NavComponent implements OnInit{
   elementos: Array<Elemento> = []
   showInfo: boolean = false
   showList: boolean = false
+  hiddenNav: string = "<<"
+  isHiddenNav: boolean = false
 
   ngOnInit(){
   }
@@ -78,6 +80,19 @@ export class NavComponent implements OnInit{
 
   isShowList(){
     return this.showList
+  }
+
+  toHiddenNav(): void{
+      if(this.isHiddenNav){
+        this.hiddenNav = "<<"
+        document.getElementById("slider").style.opacity="1"
+        document.getElementById("slider").style.pointerEvents = "auto";
+      }else{
+        this.hiddenNav = ">>"
+        document.getElementById("slider").style.opacity="0"
+        document.getElementById("slider").style.pointerEvents = "none";
+      }
+      this.isHiddenNav = !this.isHiddenNav
   }
 
 }

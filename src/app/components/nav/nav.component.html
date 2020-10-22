@@ -1,8 +1,8 @@
 <div class = "title">
-    <h1>{{ titulo }}</h1>
+    <h1 routerLink = "/">{{ titulo }}</h1>
 </div>
 
-<div class = "slider">
+<div id= "slider" class = "slider">
     <h1 id="textSelect"><a id="selectPhoto" (click) ="showSlider('photo')">Photo</a> / 
         <a id="selectInfo" (click)="showSlider('info')">Info</a></h1>
     <ul style="list-style-type: none;"
@@ -12,16 +12,20 @@
                 routerLink={{elemento.LinkRoute}}>{{ elemento.Name }}</a>
         </li>
     </ul>
+    <div class = "info"
+        @fadeAnimation *ngIf="isShowInfo()">
+        <br>
+        <h2> Adrian Martin Jaimez</h2>
+        <h3> Granada, Spain</h3>
+        <br>
+        <h3 onclick="window.open('https://www.instagram.com/_adrimartin/');"> Instagram</h3>
+        <h3 onclick="window.open('https://twitter.com/_adrimartin');"> Twitter</h3>
+    </div>
 </div>
 
-<div class = "info"
-    @fadeAnimation *ngIf="isShowInfo()">
-    <br>
-    <h2> Adrian Martin Jaimez</h2>
-    <h3> Granada, Spain</h3>
-    <br>
-    <h3 onclick="window.open('https://www.instagram.com/_adrimartin/');"> Instagram</h3>
-    <h3 onclick="window.open('https://twitter.com/_adrimartin');"> Twitter</h3>
-
+<div id= "footer" class = "footer">
+    <h2 (click)=toHiddenNav()>
+        {{ hiddenNav }}
+    </h2>
 </div>
 
