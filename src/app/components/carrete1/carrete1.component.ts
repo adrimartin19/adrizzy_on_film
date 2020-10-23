@@ -37,10 +37,22 @@ export class Carrete1Component implements OnInit {
         Url: "./assets/img/Carrete1_1.png"
       },
       {
+        Url: "./assets/img/Carrete1_2.png"
+      },
+      {
         Url: "./assets/img/Carrete1_3.png"
       },
       {
-        Url: "./assets/img/Carrete1_2.png"
+        Url: "./assets/img/Carrete1_4.png"
+      },
+      {
+        Url: "./assets/img/Carrete1_5.png"
+      },
+      {
+        Url: "./assets/img/Carrete1_6.png"
+      },
+      {
+        Url: "./assets/img/Carrete1_7.png"
       }
     ]
 
@@ -50,7 +62,11 @@ export class Carrete1Component implements OnInit {
   }
 
   moverAlbum(num): void{
-    this.panelAlbum.nativeElement.scrollLeft += num.deltaY*10;
+    this.panelAlbum.nativeElement.scrollLeft += num.deltaY*20;
+  }
+
+  goto(imagen: Image){
+    window.open(imagen.Url,"_blank");
   }
 
 }
