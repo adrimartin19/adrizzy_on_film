@@ -7,6 +7,7 @@ import {  animate,
   transition,
   trigger 
 } from '@angular/animations';
+import { ApiService } from 'src/app/services/api.service';
 
 export const fadeAnimation = trigger('fadeAnimation', [
   transition(':enter', [
@@ -27,31 +28,10 @@ export class CarreteComponent implements OnInit {
 
   imagenes: Array<Image> = []
 
-  constructor() {
-    this.imagenes = [
-      {
-        Url: "./assets/img/Carrete1_1.png"
-      },
-      {
-        Url: "./assets/img/Carrete1_2.png"
-      },
-      {
-        Url: "./assets/img/Carrete1_3.png"
-      },
-      {
-        Url: "./assets/img/Carrete1_4.png"
-      },
-      {
-        Url: "./assets/img/Carrete1_5.png"
-      },
-      {
-        Url: "./assets/img/Carrete1_6.png"
-      },
-      {
-        Url: "./assets/img/Carrete1_7.png"
-      }
-    ]
-
+  constructor(private _api: ApiService
+    ) {
+    
+    this.imagenes = _api.getImagenes()
    }
 
   ngOnInit(): void {
@@ -63,6 +43,10 @@ export class CarreteComponent implements OnInit {
 
   goto(imagen: Image){
     window.open(imagen.Url,"_blank");
+  }
+
+  setAlbum(imagenes: Array<Image>){
+    this.imagenes = imagenes;
   }
 
 }

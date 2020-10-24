@@ -8,6 +8,7 @@ import {  animate,
   trigger 
 } from '@angular/animations';
 import { Router } from '@angular/router';
+import { Image } from 'src/app/interfaces/image';
 
 const listAnimation = trigger('listAnimation', [
   transition('* <=> *', [
@@ -50,18 +51,29 @@ export class NavComponent implements OnInit{
   showList: boolean = false
   hiddenNav: string = "<<"
   isHiddenNav: boolean = false
+  imagenes: Array<Image> = []
 
   ngOnInit(){
   }
 
   constructor(
     private _router: Router
-  ) { 
+  ) 
+  { 
     this.titulo = 'Adrizzy on Film'
+    
   }
 
   navList(){
-    this.elementos = this.elementos.length ? [] : [{Name: "Carrete 1", LinkRoute: "carrete1"}, {Name: "Verano", LinkRoute: "/"},  {Name: "Carrete 2", LinkRoute: "/"}];
+    this.elementos = this.elementos.length ? [] : 
+    [{Name: "Carrete 1", LinkRoute: "carrete1"}, 
+    /*{Name: "Verano", LinkRoute: "verano"},  {Name: "Carrete 2", LinkRoute: "carrete2"}*/
+    ];
+    
+    
+    
+    
+    
     if(!this.showList ) document.getElementById("selectPhoto").style.textDecoration = "underline solid 5px"
     else document.getElementById("selectPhoto").style.textDecoration = ""
     this.showList = !this.showList
@@ -108,6 +120,7 @@ export class NavComponent implements OnInit{
   }
 
   goCarrete(linkRoute: string){
+    
     this._router.navigate(['/carrete', linkRoute])
   }
 
