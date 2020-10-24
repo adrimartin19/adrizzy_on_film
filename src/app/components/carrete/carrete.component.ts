@@ -16,17 +16,13 @@ export const fadeAnimation = trigger('fadeAnimation', [
     [style({ opacity: 1 }), animate('300ms', style({ opacity: 0 }))]
   )
 ]);
-
-
 @Component({
-  selector: 'app-carrete1',
-  templateUrl: './carrete1.component.html',
-  styleUrls: ['./carrete1.component.scss'],
+  selector: 'app-carrete',
+  templateUrl: './carrete.component.html',
+  styleUrls: ['./carrete.component.scss'],
   animations: [fadeAnimation]
 })
-export class Carrete1Component implements OnInit {
-
-  
+export class CarreteComponent implements OnInit {
   @ViewChild('panelAlbum', { read: ElementRef }) public panelAlbum: ElementRef<any>;
 
   imagenes: Array<Image> = []

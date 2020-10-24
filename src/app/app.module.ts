@@ -5,32 +5,20 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
-import { RouterModule, Routes } from '@angular/router';
-import { Carrete1Component } from './components/carrete1/carrete1.component';
-import { MatGridListModule } from '@angular/material/grid-list';
+import { CarreteComponent } from './components/carrete/carrete.component';
 
 
-const routes: Routes = [
-  
-  {
-    path: 'carrete1',
-    component: Carrete1Component
-  }
-
-]
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    Carrete1Component
+    CarreteComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    MatGridListModule,
-    RouterModule.forRoot(routes, {useHash: true})
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

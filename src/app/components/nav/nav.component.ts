@@ -7,6 +7,7 @@ import {  animate,
   transition,
   trigger 
 } from '@angular/animations';
+import { Router } from '@angular/router';
 
 const listAnimation = trigger('listAnimation', [
   transition('* <=> *', [
@@ -53,7 +54,9 @@ export class NavComponent implements OnInit{
   ngOnInit(){
   }
 
-  constructor() { 
+  constructor(
+    private _router: Router
+  ) { 
     this.titulo = 'Adrizzy on Film'
   }
 
@@ -102,6 +105,10 @@ export class NavComponent implements OnInit{
         this.hiddenNav = ">>"
       
       this.isHiddenNav = !this.isHiddenNav
+  }
+
+  goCarrete(linkRoute: string){
+    this._router.navigate(['/carrete', linkRoute])
   }
 
 }
