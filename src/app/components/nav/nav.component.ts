@@ -19,8 +19,17 @@ const listAnimation = trigger('listAnimation', [
 
 export const fadeAnimation = trigger('fadeAnimation', [
   transition(':enter', [
-    style({ opacity: 0 }), animate('300ms', style({ opacity: 1 }))]
+    style({ opacity: 0 }), animate('500ms', style({ opacity: 1 }))]
   )
+]);
+
+export const fadeSlider = trigger('fadeSlider', [
+  transition(':enter', [
+    style({ opacity: 0 }), animate('300ms', style({ opacity: 1 }))]
+  ),
+  transition(':leave', [
+    style({ opacity: 1 }), animate('300ms', style({ opacity: 0 }))
+  ])
 ]);
 
 
@@ -29,7 +38,7 @@ export const fadeAnimation = trigger('fadeAnimation', [
   selector: 'app-nav',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.scss'],
-  animations: [listAnimation, fadeAnimation]
+  animations: [listAnimation, fadeAnimation, fadeSlider]
 })
 
 export class NavComponent implements OnInit{
@@ -82,16 +91,16 @@ export class NavComponent implements OnInit{
     return this.showList
   }
 
+  getHiddenNav(){
+    return !this.isHiddenNav;
+  }
+
   toHiddenNav(): void{
-      if(this.isHiddenNav){
+      if(this.isHiddenNav)
         this.hiddenNav = "<<"
-        document.getElementById("slider").style.opacity="1"
-        document.getElementById("slider").style.pointerEvents = "auto";
-      }else{
+      else
         this.hiddenNav = ">>"
-        document.getElementById("slider").style.opacity="0"
-        document.getElementById("slider").style.pointerEvents = "none";
-      }
+      
       this.isHiddenNav = !this.isHiddenNav
   }
 
