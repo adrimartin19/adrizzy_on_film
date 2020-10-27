@@ -67,7 +67,7 @@ export class NavComponent implements OnInit{
   navList(){
     this.albums = this.albums.length ? [] : 
     [{Name: "Carrete 1", LinkRoute: "carrete1"}, 
-    /*{Name: "Verano", LinkRoute: "verano"},  {Name: "Carrete 2", LinkRoute: "carrete2"}*/
+    /*{Name: "Verano", LinkRoute: "verano"}*/,  {Name: "Carrete 2", LinkRoute: "carrete2"}
     ];
     
     

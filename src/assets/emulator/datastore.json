@@ -33,5 +33,24 @@
         "Name": "Carrete1_7.png",
         "Url": "./assets/img/Carrete1_7.png",
         "IDAlbum": "carrete1"
+    },
+    {
+        "Name": "Carrete2_1.png",
+        "Url": "./assets/img/Carrete2_1.png",
+        "IDAlbum": "carrete2"
+    },
+    {
+        "Name": "Carrete2_2.png",
+        "Url": "./assets/img/Carrete2_2.png",
+        "IDAlbum": "carrete2"
+    },
+    {
+        "Name": "Carrete2_3.png",
+        "Url": "./assets/img/Carrete2_3.png",
+        "IDAlbum": "carrete2"
+    },{
+        "Name": "Carrete2_4.png",
+        "Url": "./assets/img/Carrete2_4.png",
+        "IDAlbum": "carrete2"
     }
 ]
