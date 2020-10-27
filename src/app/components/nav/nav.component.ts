@@ -119,10 +119,5 @@ export class NavComponent implements OnInit{
       this.isHiddenNav = !this.isHiddenNav
   }
 
-  goCarrete(linkRoute: string){
-    
-    this._router.navigate(['/carrete', linkRoute])
-  }
-
 }
 

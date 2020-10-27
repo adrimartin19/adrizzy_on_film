@@ -32,11 +32,14 @@ export class CarreteComponent implements OnInit {
   constructor(private _api: ApiService,
               private _ac: ActivatedRoute
     ) {
-      this._ac.paramMap.subscribe(params => this.idAlbum= (params.get('id')))
-      this.imagenes = this._api.getImagenes(this.idAlbum);
    }
 
   ngOnInit(): void {
+    this._ac.paramMap.subscribe(params =>{
+      this.idAlbum= (params.get('id'));
+      this.imagenes = this._api.getImagenes(this.idAlbum);
+    })
+    
   }
 
   moverAlbum(num): void{
@@ -45,10 +48,6 @@ export class CarreteComponent implements OnInit {
 
   goto(imagen: Image){
     window.open(imagen.Url,"_blank");
-  }
-
-  setAlbum(imagenes: Array<Image>){
-    this.imagenes = imagenes;
   }
 
 }
