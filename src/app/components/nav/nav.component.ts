@@ -70,10 +70,6 @@ export class NavComponent implements OnInit{
     {Name: "Un finde de Cumpleaños", LinkRoute: "BirthdayWeekend"}, {Name: "Carrete 2", LinkRoute: "carrete2"}
     ];
     
-    
-    
-    
-    
     if(!this.showList ) document.getElementById("selectPhoto").style.textDecoration = "underline solid 5px"
     else document.getElementById("selectPhoto").style.textDecoration = ""
     this.showList = !this.showList
