@@ -12,7 +12,7 @@ import { ActivatedRoute } from '@angular/router';
 
 export const fadeAnimation = trigger('fadeAnimation', [
   transition(':enter', [
-    style({ opacity: 0 }), animate('750ms', style({ opacity: 1 }))]
+    style({ opacity: 0 }), animate('2000ms 1500ms', style({ opacity: 1 }))]
   ),
   transition(':leave',
     [style({ opacity: 1 }), animate('300ms', style({ opacity: 0 }))]
