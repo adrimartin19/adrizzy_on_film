@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { rejects } from 'assert';
 import { Image } from '../interfaces/image';
 
 @Injectable({
@@ -8,35 +10,31 @@ export class ApiService {
 
   imagenes: Array<Image> = []
 
-  constructor() {
-    this.imagenes = [
-      {
-        Url: "./assets/img/Carrete1_1.png"
-      },
-      {
-        Url: "./assets/img/Carrete1_2.png"
-      },
-      {
-        Url: "./assets/img/Carrete1_3.png"
-      },
-      {
-        Url: "./assets/img/Carrete1_4.png"
-      },
-      {
-        Url: "./assets/img/Carrete1_5.png"
-      },
-      {
-        Url: "./assets/img/Carrete1_6.png"
-      },
-      {
-        Url: "./assets/img/Carrete1_7.png"
-      }
-    ]
+  constructor(
+    private _http: HttpClient
+  ) {
+    
   }
 
+  loadData(): Promise<void>{
+    return new Promise((resolve, reject)=> {
+      this._http.get('./assets/emulator/datastore.json').subscribe(
+        ((data: Array<Image>) => {
+          this.imagenes = data;
+          resolve();
+        })
+      );
+    });
+    
+  }
 
-  getImagenes(): Array<Image>{
-    return this.imagenes
+  getImagenes(idAlbum: string): Array<Image>{
+    var copyAlbum: Array<Image> = [];
+
+    this.imagenes.forEach(imagen => {
+      if(imagen.IDAlbum == idAlbum) copyAlbum.push(imagen);} )
+
+    return copyAlbum;
   }
 }
 

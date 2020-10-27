@@ -8,6 +8,7 @@ import {  animate,
   trigger 
 } from '@angular/animations';
 import { ApiService } from 'src/app/services/api.service';
+import { ActivatedRoute } from '@angular/router';
 
 export const fadeAnimation = trigger('fadeAnimation', [
   transition(':enter', [
@@ -27,11 +28,12 @@ export class CarreteComponent implements OnInit {
   @ViewChild('panelAlbum', { read: ElementRef }) public panelAlbum: ElementRef<any>;
 
   imagenes: Array<Image> = []
-
-  constructor(private _api: ApiService
+  idAlbum: string
+  constructor(private _api: ApiService,
+              private _ac: ActivatedRoute
     ) {
-    
-    this.imagenes = _api.getImagenes()
+      this._ac.paramMap.subscribe(params => this.idAlbum= (params.get('id')))
+      this.imagenes = this._api.getImagenes(this.idAlbum);
    }
 
   ngOnInit(): void {

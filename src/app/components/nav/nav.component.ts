@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Elemento } from 'src/app/interfaces/elemento';
+import { Album } from 'src/app/interfaces/album';
 import {  animate,
   query,
   stagger,
@@ -46,7 +46,7 @@ export const fadeSlider = trigger('fadeSlider', [
 export class NavComponent implements OnInit{
 
   titulo: string = ""
-  elementos: Array<Elemento> = []
+  albums: Array<Album> = []
   showInfo: boolean = false
   showList: boolean = false
   hiddenNav: string = "<<"
@@ -65,7 +65,7 @@ export class NavComponent implements OnInit{
   }
 
   navList(){
-    this.elementos = this.elementos.length ? [] : 
+    this.albums = this.albums.length ? [] : 
     [{Name: "Carrete 1", LinkRoute: "carrete1"}, 
     /*{Name: "Verano", LinkRoute: "verano"},  {Name: "Carrete 2", LinkRoute: "carrete2"}*/
     ];

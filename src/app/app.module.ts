@@ -1,12 +1,13 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { APP_INITIALIZER, NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
 import { CarreteComponent } from './components/carrete/carrete.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { ApiService } from './services/api.service';
 
 
 @NgModule({
@@ -18,9 +19,16 @@ import { CarreteComponent } from './components/carrete/carrete.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ {
+    provide: APP_INITIALIZER, useFactory: LoadData, deps: [ApiService], multi: true 
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export function LoadData(dataService: ApiService){
+  return () => dataService.loadData();
+}

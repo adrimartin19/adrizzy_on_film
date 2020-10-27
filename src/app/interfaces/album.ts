@@ -1,6 +1,6 @@
 
 
-export interface Elemento {
+export interface Album {
     Name: string,
     LinkRoute: string
 }
