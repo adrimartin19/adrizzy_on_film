@@ -1,98 +1,98 @@
 [
     {
-        "Name": "Carrete1_1.png",
-        "Url": "./assets/img/Carrete1_1.png",
+        "Name": "Carrete1_1.jpg",
+        "Url": "./assets/img/Carrete1_1.jpg",
         "IDAlbum": "carrete1"
     },
     {
-        "Name": "Carrete1_2.png",
-        "Url": "./assets/img/Carrete1_2.png",
+        "Name": "Carrete1_2.jpg",
+        "Url": "./assets/img/Carrete1_2.jpg",
         "IDAlbum": "carrete1"
     },
     {
-        "Name": "Carrete1_3.png",
-        "Url": "./assets/img/Carrete1_3.png",
+        "Name": "Carrete1_3.jpg",
+        "Url": "./assets/img/Carrete1_3.jpg",
         "IDAlbum": "carrete1"
     },
     {
-        "Name": "Carrete1_4.png",
-        "Url": "./assets/img/Carrete1_4.png",
+        "Name": "Carrete1_4.jpg",
+        "Url": "./assets/img/Carrete1_4.jpg",
         "IDAlbum": "carrete1"
     },
     {
-        "Name": "Carrete1_5.png",
-        "Url": "./assets/img/Carrete1_5.png",
+        "Name": "Carrete1_5.jpg",
+        "Url": "./assets/img/Carrete1_5.jpg",
         "IDAlbum": "carrete1"
     },
     {
-        "Name": "Carrete1_6.png",
-        "Url": "./assets/img/Carrete1_6.png",
+        "Name": "Carrete1_6.jpg",
+        "Url": "./assets/img/Carrete1_6.jpg",
         "IDAlbum": "carrete1"
     },
     {
-        "Name": "Carrete1_7.png",
-        "Url": "./assets/img/Carrete1_7.png",
+        "Name": "Carrete1_7.jpg",
+        "Url": "./assets/img/Carrete1_7.jpg",
         "IDAlbum": "carrete1"
     },
     {
-        "Name": "Carrete2_1.png",
-        "Url": "./assets/img/Carrete2_1.png",
+        "Name": "Carrete2_1.jpg",
+        "Url": "./assets/img/Carrete2_1.jpg",
         "IDAlbum": "carrete2"
     },
     {
-        "Name": "Carrete2_2.png",
-        "Url": "./assets/img/Carrete2_2.png",
+        "Name": "Carrete2_2.jpg",
+        "Url": "./assets/img/Carrete2_2.jpg",
         "IDAlbum": "carrete2"
     },
     {
-        "Name": "Carrete2_3.png",
-        "Url": "./assets/img/Carrete2_3.png",
-        "IDAlbum": "carrete2"
-    },{
-        "Name": "Carrete2_4.png",
-        "Url": "./assets/img/Carrete2_4.png",
-        "IDAlbum": "carrete2"
-    },
-    {
-        "Name": "Carrete2_5.png",
-        "Url": "./assets/img/Carrete2_5.png",
-        "IDAlbum": "carrete2"
-    },
-    {
-        "Name": "Carrete2_6.png",
-        "Url": "./assets/img/Carrete2_6.png",
+        "Name": "Carrete2_3.jpg",
+        "Url": "./assets/img/Carrete2_3.jpg",
         "IDAlbum": "carrete2"
     },{
-        "Name": "Carrete2_7.png",
-        "Url": "./assets/img/Carrete2_7.png",
+        "Name": "Carrete2_4.jpg",
+        "Url": "./assets/img/Carrete2_4.jpg",
+        "IDAlbum": "carrete2"
+    },
+    {
+        "Name": "Carrete2_5.jpg",
+        "Url": "./assets/img/Carrete2_5.jpg",
+        "IDAlbum": "carrete2"
+    },
+    {
+        "Name": "Carrete2_6.jpg",
+        "Url": "./assets/img/Carrete2_6.jpg",
         "IDAlbum": "carrete2"
     },{
-        "Name": "BirthdayWeekend_1.png",
-        "Url": "./assets/img/BirthdayWeekend_1.png",
+        "Name": "Carrete2_7.jpg",
+        "Url": "./assets/img/Carrete2_7.jpg",
+        "IDAlbum": "carrete2"
+    },{
+        "Name": "BirthdayWeekend_1.jpg",
+        "Url": "./assets/img/BirthdayWeekend_1.jpg",
         "IDAlbum": "BirthdayWeekend"
     },{
-        "Name": "BirthdayWeekend_2.png",
-        "Url": "./assets/img/BirthdayWeekend_2.png",
+        "Name": "BirthdayWeekend_2.jpg",
+        "Url": "./assets/img/BirthdayWeekend_2.jpg",
         "IDAlbum": "BirthdayWeekend"
     },{
-        "Name": "BirthdayWeekend_4.png",
-        "Url": "./assets/img/BirthdayWeekend_4.png",
+        "Name": "BirthdayWeekend_4.jpg",
+        "Url": "./assets/img/BirthdayWeekend_4.jpg",
         "IDAlbum": "BirthdayWeekend"
     },{
-        "Name": "BirthdayWeekend_3.png",
-        "Url": "./assets/img/BirthdayWeekend_3.png",
+        "Name": "BirthdayWeekend_3.jpg",
+        "Url": "./assets/img/BirthdayWeekend_3.jpg",
         "IDAlbum": "BirthdayWeekend"
     },{
-        "Name": "BirthdayWeekend_5.png",
-        "Url": "./assets/img/BirthdayWeekend_5.png",
+        "Name": "BirthdayWeekend_5.jpg",
+        "Url": "./assets/img/BirthdayWeekend_5.jpg",
         "IDAlbum": "BirthdayWeekend"
     },{
-        "Name": "BirthdayWeekend_6.png",
-        "Url": "./assets/img/BirthdayWeekend_6.png",
+        "Name": "BirthdayWeekend_6.jpg",
+        "Url": "./assets/img/BirthdayWeekend_6.jpg",
         "IDAlbum": "BirthdayWeekend"
     },{
-        "Name": "BirthdayWeekend_7.png",
-        "Url": "./assets/img/BirthdayWeekend_7.png",
+        "Name": "BirthdayWeekend_7.jpg",
+        "Url": "./assets/img/BirthdayWeekend_7.jpg",
         "IDAlbum": "BirthdayWeekend"
     }
 ]
