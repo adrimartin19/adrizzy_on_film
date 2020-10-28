@@ -43,7 +43,7 @@ export class CarreteComponent implements OnInit {
   }
 
   moverAlbum(num): void{
-    this.panelAlbum.nativeElement.scrollLeft += num.deltaY*20;
+    this.panelAlbum.nativeElement.scrollLeft += num.deltaY*(document.getElementById("photo").scrollHeight/200);
   }
 
   goto(imagen: Image){
