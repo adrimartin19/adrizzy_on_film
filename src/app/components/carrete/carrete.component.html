@@ -1,7 +1,7 @@
 
 
 <div #panelAlbum class="panelAlbum">
-    <div id= "loader" class="loader">Loading...</div>
+    <div id= "loader" class="loader">Loading..</div>
     <div id="album" class="album" (wheel)="moverAlbum($event)">
        <img @fadeAnimation *ngFor="let imagen of imagenes" src={{imagen.Url}} (click)= goto(imagen)>
    </div>
