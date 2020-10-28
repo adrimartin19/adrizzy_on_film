@@ -3,3 +3,15 @@
   to = "/"
   status = 200
   force = false
+
+[[redirects]]
+  from = "/carrete/BirthdayWeekend"
+  to = "/"
+  status = 200
+  force = false
+  
+  [[redirects]]
+  from = "/carrete/carrete2"
+  to = "/"
+  status = 200
+  force = false
