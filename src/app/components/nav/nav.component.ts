@@ -49,8 +49,8 @@ export class NavComponent implements OnInit{
   albums: Array<Album> = []
   showInfo: boolean = false
   showList: boolean = false
-  hiddenNav: string = "<<"
-  isHiddenNav: boolean = false
+  hiddenNav: string = ">>"
+  isHiddenNav: boolean = true
   imagenes: Array<Image> = []
 
   ngOnInit(){
