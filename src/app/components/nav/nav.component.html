@@ -8,7 +8,7 @@
     <ul style="list-style-type: none;"
         [@listAnimation]="albums.length" class = "items">
         <li *ngFor="let album of albums" class = "item">
-            <a class="linkNav" [routerLink]="['/carrete',album.LinkRoute]">{{ album.Name }}</a>
+            <a class="linkNav" [routerLink]="['/',album.LinkRoute]">{{ album.Name }}</a>
         </li>
     </ul>
     <div class = "info"

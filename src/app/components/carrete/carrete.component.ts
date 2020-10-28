@@ -1,8 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Image } from 'src/app/interfaces/image';
 import {  animate,
-  query,
-  stagger,
   style,
   transition,
   trigger 

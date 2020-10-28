@@ -8,13 +8,15 @@ import { NavComponent } from './components/nav/nav.component';
 import { CarreteComponent } from './components/carrete/carrete.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ApiService } from './services/api.service';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    CarreteComponent
+    CarreteComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
