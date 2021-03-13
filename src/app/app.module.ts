@@ -9,6 +9,7 @@ import { CarreteComponent } from './components/carrete/carrete.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ApiService } from './services/api.service';
 import { HomeComponent } from './components/home/home.component';
+import { CurriculumComponent } from './components/curriculum/curriculum.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { HomeComponent } from './components/home/home.component';
     AppComponent,
     NavComponent,
     CarreteComponent,
-    HomeComponent
+    HomeComponent,
+    CurriculumComponent
   ],
   imports: [
     BrowserModule,

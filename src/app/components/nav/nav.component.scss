@@ -1,52 +1,54 @@
 
-  .title{  
-    cursor: pointer;
-  }
+.title{  
+  cursor: pointer;
+}
 
-   .slider a{
-    cursor: pointer;
-  }
-  .slider a:hover {
+.slider a{
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  &:hover{
     text-decoration: underline 2px;
   }
+}
 
-  .info{
-    cursor: default;
-  }
+.info{
+  cursor: default;
+}
 
-  .items {
-    margin: 0;
-    padding: 0;
-  }
+.items {
+  margin: 0;
+  padding: 0;
+}
 
-  .linkNav{
-    text-decoration: none;
-    color: white;
-  }
-    
-  .item {
-    padding: 12px;
-    border-bottom: 0;
-  }
-
+.linkNav{
+  text-decoration: none;
+  color: white;
+}
   
+.item {
+  padding: 12px;
+  border-bottom: 0;
+}
+
 .footer{
   position: fixed;
   bottom: 40px;
   padding: 20px;
   cursor: pointer;
   z-index: 9999;
-  }
+}
 
-  .rrss{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  img{
-    flex: 0 1 10px;
-    flex: 1 1 10px;
-    margin: 15px;
-    width: max(3vw, 40px);
-    color: white;
-    cursor: pointer;
-  }
+.rrss{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img{
+  flex: 0 1 10px;
+  flex: 1 1 10px;
+  margin: 15px;
+  width: max(3vw, 40px);
+  color: white;
+  cursor: pointer;
+}
