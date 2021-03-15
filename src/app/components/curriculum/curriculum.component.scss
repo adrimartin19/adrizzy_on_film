@@ -26,6 +26,7 @@
     width: max(30vw, 250px);
     height: max(30vw, 250px);
     margin-top: 1.6em;
+    margin-bottom: 1.6em;
 }
 
 .name h1{
@@ -48,7 +49,12 @@
 }
 .name .icon{
     width: max(35px, 3vw);
-    
+}
+
+.rrss{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .sobremi{
