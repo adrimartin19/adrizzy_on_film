@@ -14,7 +14,7 @@ const routes: Routes = [
     component: CurriculumComponent
   },
   {
-    path: ':id',
+    path: 'carrete/:id',
     component: CarreteComponent
   },
   {
