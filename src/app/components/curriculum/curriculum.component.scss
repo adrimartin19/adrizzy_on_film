@@ -1,4 +1,63 @@
+*{
+    background-color: #353448;
+}
 .curriculum{
-    display: inline-grid;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
 }
 
+.curriculum div{
+    margin: 10px;
+    width: auto;
+}
+
+.head{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border-bottom: 1vw solid white;
+    border-image: linear-gradient(50deg, #37606c,#3e3d5e) 1;
+}
+
+.perfil{
+    background: 
+     linear-gradient(15deg, #3ab3b0,#55367d) border-box;
+    border: 6px solid transparent;
+    border-radius: 100%;
+    width: max(30vw, 250px);
+    height: max(30vw, 250px);
+    margin-top: 1.6em;
+}
+
+.name h1{
+    text-align: center;
+    line-height: 15px;
+    font-size: max(30px, 5vw);
+}
+
+.name h2{
+    text-align: center;
+    font-size: max(14px, 2.3vw);
+}
+
+.informacion_icon{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    line-height: 5px;
+    font-size: max(11px, 1.3vw);
+}
+.name .icon{
+    width: max(35px, 3vw);
+    
+}
+
+.sobremi{
+
+}
+
+.experiencia{
+    display: flex;
+    flex-flow: row wrap;
+}
