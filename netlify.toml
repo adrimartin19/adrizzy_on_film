@@ -21,3 +21,15 @@
   to = "/"
   status = 200
   force = false
+  
+  [[redirects]]
+  from = "/aboutme"
+  to = "/"
+  status = 200
+  force = false
+  
+   [[redirects]]
+  from = "/*"
+  to = "/"
+  status = 200
+  force = false
