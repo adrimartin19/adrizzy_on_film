@@ -1,34 +1,5 @@
-[[redirects]]
-  from = "/carrete1"
-  to = "/"
-  status = 200
-  force = false
-
-[[redirects]]
-  from = "/BirthdayWeekend"
-  to = "/"
-  status = 200
-  force = false
-  
-  [[redirects]]
-  from = "/carrete2"
-  to = "/"
-  status = 200
-  force = false
 
   [[redirects]]
-  from = "/home"
-  to = "/"
-  status = 200
-  force = false
-  
-  [[redirects]]
-  from = "/aboutme"
-  to = "/"
-  status = 200
-  force = false
-  
-   [[redirects]]
   from = "/*"
   to = "/"
   status = 200
