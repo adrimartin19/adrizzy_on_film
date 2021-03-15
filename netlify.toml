@@ -30,6 +30,6 @@
   
    [[redirects]]
   from = "/*"
-  to = "/"
+  to = "/home"
   status = 200
   force = false
