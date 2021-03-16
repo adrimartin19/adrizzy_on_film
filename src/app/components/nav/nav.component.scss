@@ -3,7 +3,9 @@ header{
   font-size: 20px;
 }
 
-
+header div{
+  margin: 10px;
+}
 
 header .title{
   display: flex;
@@ -15,58 +17,14 @@ header .aboutme{
   margin-left: auto;
 }
 
-
-header div{
-  margin: 10px;
-}
-
 header .title div{
   cursor: pointer;
 }
 
-body{
-  width: 30vw;
-  background: inherit;
-  z-index: 9999;
-}
-
-.slider a{
-  font-size: 13px;
-  cursor: pointer;
-  text-decoration: none;
-  color: inherit;
-  &:hover{
-    text-decoration: underline 2px;
-  }
-}
-
-.info{
-  cursor: default;
-}
-
-.items {
-  margin: 0;
-  padding: 0;
-}
-
-.linkNav{
-  text-decoration: none;
-  color: white;
-}
-  
-.item {
-  padding: 15px;
-  border-bottom: 0;
-}
-
 .footer{
+  font-size: 12px;
   position: fixed;
   bottom: 0.5vh;
   padding: 20px;
   cursor: pointer;
-}
-
-.rrss{
-  display: flex;
-  flex-wrap: wrap;
 }
