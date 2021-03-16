@@ -1,13 +1,11 @@
 header{
   width: 100%;
   font-size: 20px;
-
 }
 header .title{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-
   padding: 5px;
 }
 
@@ -22,9 +20,11 @@ header .title div{
 body{
   width: 30vw;
   background: inherit;
+  z-index: 9999;
 }
 
 .slider a{
+  font-size: 13px;
   cursor: pointer;
   text-decoration: none;
   color: inherit;
@@ -48,7 +48,7 @@ body{
 }
   
 .item {
-  padding: 12px;
+  padding: 15px;
   border-bottom: 0;
 }
 
@@ -57,7 +57,6 @@ body{
   bottom: 0.5vh;
   padding: 20px;
   cursor: pointer;
-  z-index: 9999;
 }
 
 .rrss{
