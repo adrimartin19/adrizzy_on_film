@@ -1,10 +1,27 @@
+header{
+  width: 100%;
+  font-size: 20px;
+
+}
+header .title{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  padding: 5px;
+}
+
+header div{
+  margin: 10px;
+}
+
+header .title div{
+  cursor: pointer;
+}
 
 body{
   width: 30vw;
-  background-color: inherit;
-}
-.title{  
-  cursor: pointer;
+  background: inherit;
 }
 
 .slider a{
@@ -37,7 +54,7 @@ body{
 
 .footer{
   position: fixed;
-  bottom: 40px;
+  bottom: 0.5vh;
   padding: 20px;
   cursor: pointer;
   z-index: 9999;
@@ -46,13 +63,4 @@ body{
 .rrss{
   display: flex;
   flex-wrap: wrap;
-}
-
-img{
-  flex: 0 1 10px;
-  flex: 1 1 10px;
-  margin: 15px;
-  width: max(3vw, 40px);
-  color: white;
-  cursor: pointer;
 }

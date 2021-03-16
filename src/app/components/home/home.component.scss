@@ -1,11 +1,12 @@
 .home{
-    margin-left: 30px;
-    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 10px;
 }
 
 img{
-    width: max(150px,25vw);
-    margin-left: 5vw;
-    margin-top: 10px;
+    width: max(250px, 30vw);
     cursor: pointer;
+    margin: 5px;
 }

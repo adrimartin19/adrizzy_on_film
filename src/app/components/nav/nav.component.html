@@ -1,21 +1,22 @@
-<body>
+<header>
     <div class = "title">
-        <h1 routerLink = "/">{{ titulo }}</h1>
+        <div class="titulo" routerLink = "/">{{ titulo }}</div>
+        <div class="aboutme" [routerLink]="['/aboutme']">About Me</div>
     </div>
-    
-    <div id= "slider" class = "slider" @fadeSlider *ngIf="getHiddenNav()">
-        <h1 id="textSelect"><a id="selectPhoto" (click) ="showSlider('photo')">Photo</a> / 
-            <a id="selectInfo" [routerLink]="['/aboutme']">Info</a></h1>
+</header>
+<body>
+    <div id="slider" class="slider" @fadeSlider *ngIf="getHiddenNav()">
         <ul style="list-style-type: none;"
             [@listAnimation]="albums.length" class = "items">
             <li *ngFor="let album of albums" class = "item">
                 <a class="linkNav" [routerLink]="['/',album.LinkRoute]">{{ album.Name }}</a>
             </li>
         </ul>
+
     </div>
     
     <div id= "footer" class = "footer">
-        <h2 (click)=toHiddenNav()>
+        <h2 (click)=toHiddenNav() (click) =showSlider()>
             {{ hiddenNav }}
         </h2>
     </div>
