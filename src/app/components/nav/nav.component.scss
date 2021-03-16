@@ -2,12 +2,19 @@ header{
   width: 100%;
   font-size: 20px;
 }
+
+
+
 header .title{
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
   padding: 5px;
 }
+
+header .aboutme{
+  margin-left: auto;
+}
+
 
 header div{
   margin: 10px;
